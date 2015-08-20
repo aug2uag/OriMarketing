@@ -1,0 +1,35 @@
+{
+  "port": 4969,
+  "hostname": "http://localhost:4969",
+  "mongoose": {
+    "uri": "url and uri",
+    "url": "mongodb://",
+    "urn": "connection uri",
+    "options": {
+      "db": {
+        "native_parser": true
+      },
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      },
+      "replset": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "mandrill": {
+    "key": "KEY",
+    "host": "smtp.mandrillapp.com",
+    "port": "587",
+    "username": "USER",
+    "password": "KEY",
+    "admin": {
+      "name": "Channel+",
+      "email": "noreply@channelplus.io"
+    }
+  }
+}

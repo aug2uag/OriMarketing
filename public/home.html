@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Channel+ Social Media Marketing">
+    <meta name="author" content="Channel+ Social Media Marketing">
+    <meta name="keywords" content="become a social media marketing expert, social media marketing platforms, help with social media marketing, advertising with social media marketing, branding with social media marketing, success with social media marketing, starting with social media marketing, experience with social media marketing, social media marketing for beginners, apps for social media marketing">
+
+    <title content="Channel+: automated social media marketing">Channel+ Social Media Marketing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/lineicon.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <script src="js/vendor/chart-master/Chart.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <section id="container" >
+        <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+        <!--header start-->
+        <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+          </div>
+          <!--logo start-->
+          <a href="index.html" class="logo" style="pointer-events: none; cursor: default;"><b>Channel+</b></a>
+          <!--logo end-->
+              
+          <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+              <li><a id="logout" class="logout" href="/">Logout</a></li>
+            </ul>
+          </div>
+        </header>
+        <!--header end-->
+        
+        <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+        <!--sidebar start-->
+        <aside>
+          <div id="sidebar"  class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                
+          	  <p class="centered"><img src="img/ui-sam.jpg" class="img-circle" width="60"></p>
+          	  <h5 class="centered">Console</h5>
+
+              <li class="mt">
+                <a href="/home">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Home</span>
+                </a>
+              </li>
+
+              <li class="sub-menu">
+                <a href="/marketing" >
+                  <i class="fa fa-desktop"></i>
+                  <span>Marketing Campaign</span>
+                </a>
+              </li>
+
+              <li class="sub-menu">
+                <a href="/newsfeed" >
+                  <i class="fa fa-book"></i>
+                  <span>Expertise Campaign</span>
+                </a>
+              </li>
+
+              <li class="sub-menu">
+                <a href="/config" >
+                  <i class="fa fa-cogs"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+
+              <li class="sub-menu">
+                <a href="/help" >
+                  <i class="fa fa-question-circle"></i>
+                  <span>Help Section</span>
+                </a>
+              </li>
+
+              <li class="sub-menu">
+                <a href="/contactus" >
+                  <i class="fa fa-envelope-o"></i>
+                  <span>Contact Us</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- sidebar menu end-->
+          </div>
+        </aside>
+        <!--sidebar end-->
+        
+        <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper" id="home-section">
+
+              <div class="row">
+                <div class="col-lg-9 main-chart">
+                  
+                	<div class="row mtbox">
+                		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                			<div class="box1">
+    					  			  <span class="li_heart"></span>
+    					  			  <h3 id="impressionCount"></h3>
+                      </div>
+    					  			<p id="impressionStatus"></p>
+                		</div>
+                		<div class="col-md-2 col-sm-2 box0">
+                			<div class="box1">
+      					  			<span class="li_cloud"></span>
+      					  			<h3 id="postCount"></h3>
+                      </div>
+      					  		<p id="postStatus"></p>
+                		</div>
+                		<div class="col-md-2 col-sm-2 box0">
+                			<div class="box1" id="pendingItems">
+      					  			<span class="li_stack"></span>
+      					  			<h3 id="pendingCount"></h3>
+                			</div>
+				  			      <p id="pendingStatus"></p>
+                		</div>
+                		<div class="col-md-2 col-sm-2 box0">
+                			<div class="box1" id="scheduledCampaigns">
+      					  			<span class="li_news"></span>
+      					  			<h3 id="scheduledCount"></h3>
+                			</div>
+				  			      <p id="scheduledStatus"></p>
+                		</div>
+                		<div class="col-md-2 col-sm-2 box0">
+                			<div class="box1" id="systemConfig">
+      					  			<span class="li_data"></span>
+      					  			<h3 id="systemHealth"></h3>
+                			</div>
+				  			      <p id="systemStatus"></p>
+                		</div>
+                	
+                	</div><!-- /row mt -->	
+                    
+                      		
+        					<div class="row">
+        						<!-- TWITTER PANEL -->
+        						<div class="col-xs-6 mb">
+                      <div class="darkblue-panel pn">
+                        <div class="darkblue-header">
+        						  		<h5>FACEBOOK DAILIES</h5>
+                        </div>
+        								<canvas id="facebookStatus" height="120" width="120"></canvas>
+        								<p class="todaysDate"></p>
+        								<footer>
+        									<div class="pull-left">
+        										<h5 id="facebookAlloted"><i class="fa fa-hdd-o"></i></h5>
+        									</div>
+        									<div class="pull-right">
+        										<h5 id="facebookUsed"></h5>
+        									</div>
+        								</footer>
+                      </div>
+                    </div><!-- /col-md-4 -->
+
+
+
+                    <div class="col-xs-6 mb">
+                      <div class="darkblue-panel pn">
+                        <div class="darkblue-header">
+                          <h5>TWITTER DAILIES</h5>
+                        </div>
+                        <canvas id="twitterStatus" height="120" width="120"></canvas>
+                        <p class="todaysDate"></p>
+                        <footer>
+                          <div class="pull-left">
+                            <h5 id="twitterAlloted"><i class="fa fa-hdd-o"></i></h5>
+                          </div>
+                          <div class="pull-right">
+                            <h5 id="twitterUsed"></h5>
+                          </div>
+                        </footer>
+                      </div>
+                    </div><!-- /col-md-4 -->
+                  </div><!-- /row -->
+  					
+        					<div class="row mt">
+                    <!--CUSTOM CHART START -->
+                    <div class="border-head">
+                      <h3>Posts this week</h3>
+                    </div>
+                    <div class="custom-bar-chart">
+                      <ul class="y-axis">
+                          <li><span>100</span></li>
+                          <li><span>80</span></li>
+                          <li><span>60</span></li>
+                          <li><span>40</span></li>
+                          <li><span>20</span></li>
+                          <li><span>0</span></li>
+                      </ul>
+                      <div class="bar">
+                          <div class="title" id="six_days_ago"></div>
+                          <div class="value tooltips" id="six_days_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar ">
+                          <div class="title" id="five_days_ago"></div>
+                          <div class="value tooltips" id="five_days_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar ">
+                          <div class="title" id="four_days_ago"></div>
+                          <div class="value tooltips" id="four_days_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar ">
+                          <div class="title" id="three_days_ago"></div>
+                          <div class="value tooltips" id="three_days_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar">
+                          <div class="title" id="two_days_ago"></div>
+                          <div class="value tooltips" id="two_days_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar ">
+                          <div class="title" id="one_day_ago"></div>
+                          <div class="value tooltips" id="one_day_ago_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                      <div class="bar">
+                          <div class="title">TODAY</div>
+                          <div class="value tooltips" id="today_data" data-toggle="tooltip" data-placement="top"></div>
+                      </div>
+                    </div>
+                    <!--custom chart end-->
+                  </div><!-- /row -->	
+        				
+                </div><!-- /col-lg-9 END SECTION MIDDLE -->
+                    
+                    
+        <!-- **********************************************************************************************************************************************************
+        RIGHT SIDEBAR CONTENT
+        *********************************************************************************************************************************************************** -->                  
+                    
+               
+            </div>
+          </section>
+        </section>
+        <div class="push"></div>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+          <div class="text-center">
+            Channel+ © 2015
+            <a id="go-top" class="go-top">
+              <i class="fa fa-angle-up"></i>
+            </a>
+          </div>
+        </footer>
+        <!--footer end-->
+      </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="js/vendor/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="js/vendor/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/jquery.sparkline.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/js/bootstrap-dialog.min.js"></script>
+
+    <!--common script for all pages-->
+    <script src="js/vendor/common-scripts.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--script for this page-->
+    <script src="js/vendor/sparkline-chart.js"></script>    
+	
+  </body>
+</html>

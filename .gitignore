@@ -1,0 +1,8 @@
+node_modules
+public/build/node_modules
+.DS_Store
+app/.DS_Store
+public/.DS_Store
+npm-debug.log
+dailyArticlesRequest.js
+htmlEmailTemplate.html
